@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-class FormEmployees extends React.Component {
+class Movie extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -26,7 +26,7 @@ class FormEmployees extends React.Component {
       .post(url, this.state)
       .then((res) => res.data)
       .then((res) => {
-        alert(`Movie add with the ID ${res.id} !`);
+        alert(`Movie add !`);
       })
       .catch((e) => {
         console.error(e);
@@ -73,7 +73,6 @@ class FormEmployees extends React.Component {
                 value={this.state.comment}
               />
             </div>
-            <hr />
             <div className="form-data">
               <input type="submit" value="Send" />
             </div>
@@ -83,4 +82,4 @@ class FormEmployees extends React.Component {
     );
   }
 }
-export default FormEmployees;
+export default Movie;

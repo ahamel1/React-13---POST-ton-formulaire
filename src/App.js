@@ -1,11 +1,10 @@
 import React from "react";
-import "./App.css";
-import FormEmployees from "./FormEmployees";
+import Movie from "./Movie.js";
 
 function App() {
   return (
     <div className="App">
-      <FormEmployees />
+      <Movie />
     </div>
   );
 }
